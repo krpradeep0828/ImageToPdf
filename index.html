@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgToPdf</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Imgae To PDF Convert </h1>
+        <div class="upload-img">
+            <input type="file" name="" onChange="loadImg(event)" accept=".png, .jpg, .jpeg">
+            Upload Image
+        </div>
+        <img id="showImg" src="./bg.avif" alt="">
+        <button onclick="pdfDown()">Image To PDF</button>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
